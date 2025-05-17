@@ -22,6 +22,4 @@ resource "aws_instance" "myinstance" {
     Name = "myinstance ${count.index+1}"
 }
 }
-output "my_ip" {
-   value = aws_instance.myinstance.public_ip
-}
+
